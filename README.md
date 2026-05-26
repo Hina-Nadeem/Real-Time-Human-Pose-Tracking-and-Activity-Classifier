@@ -1,17 +1,16 @@
 
 
-Uploading output_processed_file.mp4…
 
 # Real-Time Human Pose Tracking and Activity Classifier
 
-## 📌 Project Overview
+##  Project Overview
 This repository contains a real-time computer vision pipeline developed for a **Computer Vision Complex Computing Problem (CCP)** assignment. The system processes sequential video frames or live webcam feeds to detect human poses, calculate critical biomechanical joint angles, and employ a rule-based decision tree to classify three distinct human behaviors: **Standing**, **Squatting**, and **Raising Arm**. 
 
 The system tracks algorithm performance by logging classification matches frame-by-frame against an expected ground-truth timeline and dynamically plotting running accuracy metrics.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 ### 1. Pose Detection & Coordinate Smoothing
 * Utilizes the modern **MediaPipe Tasks API** (`PoseLandmarker`) to extract 33 distinct skeletal keypoints.
@@ -29,7 +28,7 @@ The system tracks algorithm performance by logging classification matches frame-
 
 ---
 
-## 🛠️ System Architecture & Logic Design
+##  System Architecture & Logic Design
 
 ### Angle Calculation Formula
 Joint angles ($\theta$) at any central vertex joint $B$ flanked by keypoints $A$ and $C$ are computed using the two-argument arctangent function (`atan2`):
@@ -45,7 +44,7 @@ $$\theta = \left| \text{atan2}(C_y - B_y, C_x - B_x) - \text{atan2}(A_y - B_y, A
 
 ---
 
-## 📦 Installation & Getting Started
+##  Installation & Getting Started
 
 ### Prerequisites
 Ensure you have Python 3.9+ installed along with the necessary library dependencies:
@@ -65,7 +64,7 @@ python exerciseclassificationcode.py
 
 Press 'q' on the active video display window to stop processing, finish saving the recorded video, and render the evaluation charts.
 
-### 📊 Empirical Evaluation Charts
+###  Empirical Evaluation Charts
 The execution outputs two core quantitative tracking subplots automatically saved to disk as evaluation_charts.png:
 
 * Geometrical Joint Angles Fluctuation Chart: Tracks the exact degrees of the knee, hip, and elbow variations frame-by-frame to isolate transition milestones.
