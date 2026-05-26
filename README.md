@@ -70,6 +70,6 @@ The execution outputs two core quantitative tracking subplots automatically save
 * Geometrical Joint Angles Fluctuation Chart: Tracks the exact degrees of the knee, hip, and elbow variations frame-by-frame to isolate transition milestones.
 * Running Pipeline Accuracy Progression Curve: Visualizes real-time performance, showing brief dipping intervals at movement transition thresholds before stabilizing over sustained actions.
 
-🎥 Project Demo (How to View Video)
+ Project Demo (How to View Video)
 * Go to output_processed_file.mp4
 
